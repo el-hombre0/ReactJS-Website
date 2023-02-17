@@ -1,0 +1,30 @@
+.logo{
+    width: 5em;
+    border-radius: 50%;
+    margin: 1em;
+}
+.header{
+    background-color: rgb(181, 172, 221);
+    display: block;
+}
+.sales{
+    font-size: 30px;
+    padding: 4px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    background-color: rgb(191, 184, 221);
+    border-radius: 10px;
+    display: inline;
+}
+
+.phone-number{
+    font-size: 40px;
+    margin: 0.5em;
+    display: inline;
+    float: right;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(191, 184, 221);
+
+}
