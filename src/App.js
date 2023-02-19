@@ -4,15 +4,27 @@ import './Header.css';
 import Content from './components/Content';
 import Header from './components/Header'
 import Navbar from './components/Navbar';
+
+import { Routes, Route } from 'react-router-dom';
+import Catalogue from "./pages/Catalogue"
+import Monthlysub from "./pages/Monthlysub";
+import Bonusprogram from "./pages/Bonusprogram";
+import About from "./pages/About";
+import Nopage from "./pages/Nopage"
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <Content />
-    </div>
-
+      <div className="App">
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/catalogue" element={<Catalogue />} />
+          <Route path="/monthlysub" element={<Monthlysub />} />
+          <Route path="/bonusprogram" element={<Bonusprogram />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Nopage />} />
+        </Routes>
+      </div>
   );
 }
-
 export default App;
