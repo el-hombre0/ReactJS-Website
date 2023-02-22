@@ -1,8 +1,10 @@
+import { NavLink } from "react-router-dom";
+
 const Nopage = () => {
     return (
         <div>
             <h3>Страница не найдена</h3>
-            <p>Перейдите на <a href="/">главную страницу</a></p>
+            <p>Перейдите на <NavLink to="/">главную страницу</NavLink></p>
         </div>
     )
 }
