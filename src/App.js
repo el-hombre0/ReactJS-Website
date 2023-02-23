@@ -3,6 +3,8 @@ import './App.css';
 import Content from './components/Content/Content';
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+
 
 import { Routes, Route } from 'react-router-dom';
 import Catalogue from "./pages/Catalogue"
@@ -17,12 +19,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Content />} />
+          <Route path="/" element={<Content />} />
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/monthlysub" element={<Monthlysub />} />
           <Route path="/bonusprogram" element={<Bonusprogram />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
+        <Footer />
       </div>
   );
 }
