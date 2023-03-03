@@ -5,24 +5,29 @@ import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
-
 import { Routes, Route } from 'react-router-dom';
-import Catalogue from "./pages/Catalogue"
-import Monthlysub from "./pages/Monthlysub";
-import Bonusprogram from "./pages/Bonusprogram";
-import About from "./pages/About";
-import Nopage from "./pages/Nopage"
+import Catalogue from "./routes/Catalogue"
+import Monthlysub from "./routes/Monthlysub";
+import Bonusprogram from "./routes/Bonusprogram";
+import Support from "./routes/Support"
+import About from "./routes/About";
+import Nopage from "./routes/Nopage"
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 function App() {
   return (
       <div className="App">
-        <Header />
+        <Header user_number={getRandomInt(200, 300)}/>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Content />} />
           <Route path="/" element={<Content />} />
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/monthlysub" element={<Monthlysub />} />
           <Route path="/bonusprogram" element={<Bonusprogram />} />
+          <Route path='/support' element={<Support/>}></Route>
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
