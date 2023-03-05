@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 import Catalogue from "./routes/Catalogue"
 import Monthlysub from "./routes/Monthlysub";
 import Bonusprogram from "./routes/Bonusprogram";
-import Support from "./routes/Support"
+import Support from "./routes/Support/Support"
 import About from "./routes/About";
 import Nopage from "./routes/Nopage"
 function getRandomInt(min, max) {
