@@ -5,9 +5,9 @@ const Content = () => {
     return <main>
         <h3 className='Header'>Техника в наличии</h3>
         <hr></hr>
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div className="album py-5 bg-light">
+            <div className="container">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <Card title='Беззеркальная камера Sony ZV-1 черная'
                         image='photo1.jpg'
                         description='20.1 Мп, 13.2 x 8.8 мм, CMOS, диафрагма: f/1.8-2.8, 100-12800 ISO, 24 кадр./сек, экран - поворотный'

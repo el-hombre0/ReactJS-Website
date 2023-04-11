@@ -19,7 +19,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/catalogue">Каталог</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/monthlysub">Ежемесячная подписка</NavLink>
+              <NavLink className="nav-link" to="/account">Личный кабинет</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/bonusprogram">Бонусная программа</NavLink>

@@ -7,11 +7,15 @@ import Footer from './components/Footer/Footer';
 
 import { Routes, Route } from 'react-router-dom';
 import Catalogue from "./routes/Catalogue"
-import Monthlysub from "./routes/Monthlysub";
+// import Account from "./routes/Account";
 import Bonusprogram from "./routes/Bonusprogram";
 import Support from "./routes/Support/Support"
 import About from "./routes/About";
 import Nopage from "./routes/Nopage"
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import {React} from "react";
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -25,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Content />} />
           <Route path="/catalogue" element={<Catalogue />} />
-          <Route path="/monthlysub" element={<Monthlysub />} />
+          {/* <Route path="/account" element={<Account />} /> */}
           <Route path="/bonusprogram" element={<Bonusprogram />} />
           <Route path='/support' element={<Support/>}></Route>
           <Route path="/about" element={<About />} />
